@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.Assert.assertTrue;
 
@@ -11,8 +12,11 @@ public class SeleniumTest {
 
     @Before
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver","/opt/chromedriver");
-        driver = new ChromeDriver();
+
+        ChromeOptions chromeOptions= new ChromeOptions();
+        chromeOptions.setBinary("/opt/chromedriver");
+      //  System.setProperty("webdriver.chrome.driver","/opt/chromedriver");
+        driver = new ChromeDriver(chromeOptions);
     }
     @After
     public void tearDown(){
