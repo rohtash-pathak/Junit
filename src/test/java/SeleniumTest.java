@@ -11,7 +11,7 @@ public class SeleniumTest {
 
     @Before
     public void setUp(){
-        // System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver","/opt/chromedriver");
         driver = new ChromeDriver();
     }
     @After
