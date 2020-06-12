@@ -11,7 +11,7 @@ public class SeleniumTest {
 
     @Before
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/selenium-test/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/selenium-test/chromedriver");
         driver = new ChromeDriver();
     }
     @After
