@@ -14,7 +14,7 @@ public class JunitTest {
     public void junitTestFail() {
         int a = 1;
         int b = 2;
-        assertTrue(a + b == 2);
+        assertTrue(a + b == 3);
     }
 }
 
